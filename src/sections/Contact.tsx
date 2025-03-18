@@ -37,21 +37,21 @@ const Contact = () => {
               <Mail className="text-primary" size={24} />
               <div>
                 <h4 className="font-medium">Email</h4>
-                <p className="text-gray-400">your.email@example.com</p>
+                <p className="text-gray-400">karm131005@gmail.com</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <Phone className="text-secondary" size={24} />
               <div>
                 <h4 className="font-medium">Phone</h4>
-                <p className="text-gray-400">+1 234 567 890</p>
+                <p className="text-gray-400">+91 7676805844</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <MapPin className="text-accent" size={24} />
               <div>
                 <h4 className="font-medium">Location</h4>
-                <p className="text-gray-400">City, Country</p>
+                <p className="text-gray-400">Bengaluru, Karnataka</p>
               </div>
             </div>
           </div>

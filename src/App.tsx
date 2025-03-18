@@ -1,9 +1,11 @@
-import React, { Suspense, lazy } from 'react';
+import { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import LoadingSpinner from './components/LoadingSpinner';
 import Section from './components/Section';
+import Jotform from './components/Jotform';
+import ElevenLabsAgent from './components/ElevenLabsAgent';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 // Lazy load sections
 const About = lazy(() => import('./sections/About'));
@@ -16,6 +18,8 @@ function App() {
   return (
     <div className="bg-dark text-gray-100">
       <Navbar />
+      <Jotform />
+      <ElevenLabsAgent />
       
       <Suspense fallback={<LoadingSpinner />}>
         {/* Hero Section */}
@@ -45,7 +49,7 @@ function App() {
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                   <Linkedin size={24} />
                 </a>
-                <a href="mailto:example@email.com" className="text-gray-400 hover:text-primary transition-colors">
+                <a href="mailto:karm131005@gmail.com" className="text-gray-400 hover:text-primary transition-colors">
                   <Mail size={24} />
                 </a>
               </div>
@@ -58,9 +62,10 @@ function App() {
             >
               <div className="relative w-64 h-64 md:w-96 md:h-96">
                 <img
-                  src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&auto=format&fit=crop&q=60"
-                  alt="Profile"
-                  className="rounded-full object-cover animate-float"
+                  src="/images/profile1.jpg"
+                  alt="M. Karthik Profile"
+                  className="rounded-full object-cover animate-float w-full h-full"
+                  style={{ objectFit: 'cover', objectPosition: 'top center' }}
                 />
               </div>
             </motion.div>
