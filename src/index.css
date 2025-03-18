@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark text-gray-100 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply px-4 py-2 text-sm font-medium text-gray-300 hover:text-primary transition-colors duration-200;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-gradient;
+  }
+  
+  .card {
+    @apply bg-dark-lighter p-6 rounded-lg shadow-lg hover:shadow-primary/20 transition-all duration-300;
+  }
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
